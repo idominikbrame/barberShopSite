@@ -11,13 +11,13 @@ a, a:visited, a:hover, a:active {
   color: inherit;
 }
 .background-image {
-  height: 1200px;
+  height: 1100px;
   width: auto;
   background-image: url(./images/bgmain.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  z-index: 0;
+  z-index: -1;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -101,9 +101,9 @@ header {
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  width: 500px;
+  width: 400px;
   height: 500px;
-  background-color: rgba(255, 255, 255, 0.74);
+  background-color: rgba(255, 255, 255, 0.884);
   margin: 0 20px;
   border-radius: 5px;
 }
@@ -122,8 +122,7 @@ header {
   text-align: center;
   padding: 5px 0px;
   width: 100%;
-  background-color: rgb(50, 101, 143)
-
+  background-color: rgb(50, 101, 143);
 }
 
 #services a {
@@ -134,13 +133,56 @@ header {
 .commitment-container {
   display: grid;
   width: 100vw;
-  height: 1200px;
+  height: 100vh;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  z-index: 0;
+  z-index: 1;
 }
 
-.commitment-container div:nth-child(2){
-  background-color: rgb(50, 101, 143);
-  height: 50vh;
+.commitment-container div:nth-child(2), .commitment-container div:nth-child(3){
+  background-color: rgb(253, 253, 253);
+  height: 100%;
+}
+
+.commitment-image {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.commitment-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.commitment-section:nth-child(2){
+  margin: 0px 30% 50px 70px;
+}
+
+.commitment-section:nth-child(3){
+  margin: 0px 50px 0px 30%;
+}
+.commitment-section h2 {
+  margin: 0 -20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.commitment-section h1 {
+  font-size: 35px;
+}
+
+.commitment-section p {
+  font-size: 20px;
+}
+
+.commitment-section h2, h1 {
+  color: rgb(50, 101, 143);
+}
+
+.commitment-image img {
+  width: 100%;
 }
