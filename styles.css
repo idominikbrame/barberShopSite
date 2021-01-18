@@ -101,15 +101,15 @@ header {
   flex-direction: column;
   justify-content: space-around;
   text-align: left;
-  width: 400px;
-  height: 500px;
+  width: 350px;
+  height: 400px;
   background-color: rgba(255, 255, 255, 0.884);
-  margin: 0 20px;
+  margin: 0 40px;
   border-radius: 5px;
 }
 
 .address {
-  padding-left: 60px;
+  padding-left: 40px;
   font-size: 1.2em;
 }
 
@@ -185,4 +185,22 @@ header {
 
 .commitment-image img {
   width: 100%;
+}
+
+footer {
+  display: flex;
+  height: 20vh;
+  bottom: 0px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: black;
+  color: white;
+}
+
+.bottom-nav {
+  display: flex;
+  align-items: center;
+}
+.bottom-nav a {
+  padding: 0px 30px;
 }
