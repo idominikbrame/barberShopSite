@@ -1,0 +1,78 @@
+.cust-satisfaction {
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+  grid-template-rows: 40vh;
+
+}
+
+.cust-satisfaction div {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  grid-column: 2/3;
+}
+
+.cust-satisfaction h2, h1{
+  margin: 0px 0px;
+}
+
+.cust-satisfaction h2 {
+  margin-top: 50px;
+  color:  rgb(50, 101, 143);
+  font-family: 'Dancing Script', cursive;
+}
+
+.about-container {
+  display: grid;
+  width: 100vw;
+  height: 200vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  z-index: 1;
+}
+
+
+.about-image {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.about-section:nth-child(even){
+  margin: 0px 30% 50px 70px;
+}
+
+.about-section:nth-child(odd){
+  margin: 0px 50px 0px 30%;
+}
+.about-section h2 {
+  margin: 0 -20px;
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+}
+
+.about-section h1 {
+  font-size: 35px;
+}
+
+.about-section p {
+  font-size: 20px;
+}
+
+.about-section h2, h1 {
+  color: rgb(50, 101, 143);
+}
+
+.about-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
